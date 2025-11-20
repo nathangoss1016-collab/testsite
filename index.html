@@ -1,31 +1,104 @@
-
 <!DOCTYPE html>
-<html>
+ <html>
   <head>
+   <style>
+    body {
+     background-color: lightgreen;
+     font-family: Arial;
+     color: black;
+     text-align: center;
+     }
+    header {
+     color: white;
+     text-align: center;
+     padding: 50px;
+     }
+    h1 {
+     color: navy;
+     font-size: 36px;
+     }
+    p {
+     font-size: 18px;
+     }
+    img {
+     width: 400px;
+     border-radius: 50%;
+     border: 3px solid green;
+     margin-top: 10px;
+     }
+    .table-style1 {
+     width: 80%;
+     margin: 20px auto;
+     border: 2px solid navy;
+     }
+    .table-style1 th, .table-style1 td {
+     border: 1px solid navy;
+     }
+    .table-style th {
+     background-color: lightblue;
+     }
+    .table-style2 {
+     width: 60%;
+     margin: 20px auto;
+     border-collapse: collapse;
+     border: 2px solid darkgreen;
+     }
+    .table-style 2 th, .table-style2 td {
+     border: 1px solid darkgreen;
+     padding: 10px;
+     text-align: center;
+     }
+    .table-style2 th {
+     background-color: lightgreen;
+     }
+    .about {
+     width: 60%;
+     margin: 20px auto;
+     text-align: left;
+     }
+    div.mycontainer {
+     width: 66%;
+     overflow: auto;
+     }
+      div.mycontainer div{
+       width: 50%;
+       float: left;
+       }
+    .video {
+     width: 55%;
+     margin: 10px auto;
+     text-align: center;
+     border: 3px solid red;
+     }
+   </style>
     <title>My Personal Webpage</title>
   </head>
   <body>
-    <header>
+  <header>
       <h1>Welcome to My Personal Webpage</h1>
       <p>This is a simple example of an HTML and CSS personal webpage.</p>
-      <pre>
-      Name: Link
-      Age: 121
-      Location: Skyloft
-      </pre>
+ <pre>
+ Name: Link
+ Age: 121
+ Location: Skyloft
+ </pre>
     </header>
-    <section>
+    <section class="about">
 	<p>Check out my favorite website:
         <a href="https://www.fairshake.net/"</a>
         <a href="https://www.fairshake.net/" target="_blank">Reentry Resource Destination</a>
         </p>
+    </section>
+    <section>
     <a href="mailto: nathangoss1016@gmail.com" target="_blank">nathangoss1016@gmail.com</a>
+    </section>
+    <section>
       <a href="https://www.imdb.com/title/tt29873948/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_The%2520Legen" target="_blank">
 	<img src="https://github.com/nathangoss1016-collab/testsite/blob/main/Hyper%20Link.jpg?raw=true" alt="Hyper Link"></a>
-  </section>
+    </section>
   <hr>
     <h2>My Hobbies</h2>
-    <table>
+    <table class="table-style1">
      <tr>
       <th>Hobby</th>
       <th>Hours/Week</th>
@@ -56,7 +129,7 @@
      </tr>
     </table>
     <h2>My Favorite Games</h2>
-    <table>
+    <table class="table-style2">
      <tr>
       <th>Game</th>
       <th>Year</th>
@@ -86,17 +159,23 @@
       <td>1998</td>
      </tr>
     </table>
+   <div class="mycontainer">
+   <div>
     <h2>My Favorite Foods</h2>
      <ul>
       <li>Mushrooms</li>
       <li>Fruit</li>
       <li>Honey</li>
      </ul>
+   </div>
+   <div> 
     <h2>My Favorite Drinks</h2>
      <ul>
       <li>Milk</li>
      </ul>
-  <section>
+   </div>
+   </div>
+  <section class="video">
    <h2>My Favorite Video</h2>
    <video width="480" height="360" controls>
    <source src="https://github.com/nathangoss1016-collab/testsite/blob/main/Linkvideo.mp4?raw=True">
